@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techno Hacks Login</title>
+    <link rel="stylesheet" href="webloginp.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>        
+</head>
+<body color="black">
+    <header class="header">
+        <a href="#" class="logo"><span>Techno</span>Hacks</span></a>
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Service</a>
+            <a href="#">contact</a>
+        </nav>
+        <button id="loginButton" class="button" onclick="login()">Login</button>
+    </header>  
+    <section class="home">
+        <div id="main">
+            <h2>TECHNO  HACKS</h2>
+            <br>
+            <p> welcome to the website. This is the official<br> website to login to the techno hack courses. You <br> can find the more courses in this platform. </p>
+            <br>
+            <br>
+            <a href="#">Get started</a>
+        </div>
+        <div id="img-box">
+          <img src="tec.png" style="margin-right: 80px; border-radius: 50%;">
+
+        </div> 
+
+        <div class="wrapper" id="login" style="display:none">
+            <form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Email" required>
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember Me</label>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="register-link">
+                    <p>Dont have an account? <a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </section>  
+    <script src="valid.js"></script>
+    
+            <script>
+              function login() {
+                  // Hide the content in the main div
+                  document.getElementById('main').style.display = 'none';
+                  document.getElementById('img-box').style.display = 'none';
+                  // Show the login form
+                  document.getElementById('login').style.display = 'block';
+              }
+          </script>
+          
+     
+</body>
+</html>
