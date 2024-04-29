@@ -1,0 +1,216 @@
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';;
+    text-decoration:none;
+    list-style:none;
+}
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:35px 12%;
+   
+    backdrop-filter: blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+.logo{
+    font-size:25px;
+    color:black;
+    font-weight:600;
+    transition:0.3s ease;
+    
+}
+.logo:hover{
+  color:#ff3c78;
+  text-shadow: 0 0 25px #ff3c78,
+               0 0 50px #ff3c78;
+   transform: scale(1.1);
+}
+
+span{
+    color:black;
+}
+.navbar a{
+    font-size:18px;
+    color:black;
+    font-weight:500;
+    margin:0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    
+}
+.navbar a:hover,
+.navbar a.active{
+    color:#ff3c78;
+    border-bottom:3px solid #ff3c78;   
+}
+
+.button{
+    padding:10px 28px;
+    background-color:white;
+    color:black;
+    border:2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("https://th.bing.com/th/id/OIP.zSdtYJQGh9PgSXum79iseAHaDt?rs=1&pid=ImgDetMain+") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main h2{
+  font-size: 3em;
+  letter-spacing: .03em;
+  text-align: left;
+
+}
+#main a{
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  font-weight: 500;
+  padding: 10px 40px;
+  border-radius: 40px;
+
+}
+#img-box img {
+  border-radius: 50%; 
+  width: 300px;
+  height: 300px;
+  object-fit: cover; 
+}
+  .wrapper h1{
+    font-size: 36px;
+    text-align: center;
+  }
+  .wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 30px 0;
+  }
+  .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+  }
+  .input-box input::placeholder{
+    color: #fff;
+  }
+  .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+  
+  }
+  .wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+  }
+  .remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+  
+  }
+  .remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+  
+  }
+  .remember-forgot a:hover{
+    text-decoration: underline;
+  }
+  .wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+  .wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+  
+  }
+  .register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .register-link p a:hover{
+    text-decoration: underline;
+  }
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+.login-container {
+  display: flex;
+  align-items: center;
+}
+#main {
+  max-width: 60%; 
+  text-align: left; 
+}
+
+.wrapper {
+  width: 35%; 
+  height: 350px; 
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 40px 50px; 
+}
+
+#img-box {
+  flex: 0; 
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 40px;
+}
